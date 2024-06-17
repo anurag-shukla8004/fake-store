@@ -54,8 +54,14 @@ Make sure you have Node.js and npm installed on your machine.
 
 ## Live Demo
 
-Check out the live demo of the project: [Fake Store](https://elegant-basbousa-956151.netlify.app)
+Check out the live demo of the project: [Fake Store](https://elegant-basbousa-956151.netlify.app
+
+## Repository
+
+The source code is available on GitHub: [Fake Store Repository](https://github.com/anurag-shukla8004/fake-shop)
 
 ## CI/CD
 
 This project uses GitHub Actions and Netlify for continuous integration and continuous deployment.
+
+
