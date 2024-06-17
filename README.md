@@ -34,9 +34,49 @@ Make sure you have Node.js and npm installed on your machine.
     npm run dev
     ```
 
-### Build
+### Additional Scripts
 
-To create a production build of the project:
+- **Linting and Type Checking**:
+    - To perform type checking and linting:
 
-```sh
-npm run build
+    ```sh
+    npm run check
+    ```
+
+    - To perform type checking and linting in watch mode:
+
+    ```sh
+    npm run check:watch
+    ```
+
+- **Testing**:
+    - To run tests in watch mode:
+
+    ```sh
+    npm run test
+    ```
+
+## Live Demo
+
+Check out the live demo of the project: [Fake Store](https://elegant-basbousa-956151.netlify.app)
+
+## Repository
+
+The source code is available on GitHub: [Fake Store Repository](https://github.com/anurag-shukla8004/fake-shop)
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+## Acknowledgements
+
+- [Svelte](https://svelte.dev/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [TypeScript](https://www.typescriptlang.org/)
+
+---
+Developed by Anurag Shukla
