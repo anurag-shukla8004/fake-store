@@ -70,12 +70,36 @@ This project uses GitHub Actions and Netlify for continuous integration and cont
 
 ### GitHub Actions
 
-Automates the testing and building process on every push and pull request.
+Automates the testing and building process on every push and pull request. Here is an example of a GitHub Actions workflow configuration:
 
-### Netlify
+```yaml
+name: CI/CD Pipeline
 
-Automatically deploys the latest build to the live site.
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
 
-## Repository
+jobs:
+  build:
+    runs-on: ubuntu-latest
 
-For more information and to view the source code, visit the GitHub repository: [Fake Shop](https://github.com/anurag-shukla8004/fake-shop)
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Setup Node.js
+      uses: actions/setup-node@v2
+      with:
+        node-version: '16'
+
+    - name: Install dependencies
+      run: npm install
+
+    - name: Run tests
+      run: npm test
+
+    - name: Build
+      run: npm run build
