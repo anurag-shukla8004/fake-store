@@ -34,14 +34,6 @@ Make sure you have Node.js and npm installed on your machine.
     npm run dev
     ```
 
-### Build
-
-To create a production build of the project:
-
-    ```sh
-    npm run build
-    ```
-
 ## Main Dependencies
 
 - **@babel/preset-env**: Transpiles modern JavaScript for older environments.
@@ -67,39 +59,3 @@ Check out the live demo of the project: [Fake Store](https://elegant-basbousa-95
 ## CI/CD
 
 This project uses GitHub Actions and Netlify for continuous integration and continuous deployment.
-
-### GitHub Actions
-
-Automates the testing and building process on every push and pull request. Here is an example of a GitHub Actions workflow configuration:
-
-```yaml
-name: CI/CD Pipeline
-
-on:
-  push:
-    branches:
-      - main
-  pull_request:
-    branches:
-      - main
-
-jobs:
-  build:
-    runs-on: ubuntu-latest
-
-    steps:
-    - uses: actions/checkout@v2
-
-    - name: Setup Node.js
-      uses: actions/setup-node@v2
-      with:
-        node-version: '16'
-
-    - name: Install dependencies
-      run: npm install
-
-    - name: Run tests
-      run: npm test
-
-    - name: Build
-      run: npm run build
