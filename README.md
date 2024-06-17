@@ -34,49 +34,48 @@ Make sure you have Node.js and npm installed on your machine.
     npm run dev
     ```
 
-### Additional Scripts
+### Build
 
-- **Linting and Type Checking**:
-    - To perform type checking and linting:
-
-    ```sh
-    npm run check
-    ```
-
-    - To perform type checking and linting in watch mode:
+To create a production build of the project:
 
     ```sh
-    npm run check:watch
+    npm run build
     ```
 
-- **Testing**:
-    - To run tests in watch mode:
+## Main Dependencies
 
-    ```sh
-    npm run test
-    ```
+- **@babel/preset-env**: Transpiles modern JavaScript for older environments.
+- **@fortawesome/fontawesome-free**: Provides free font icons.
+- **@testing-library/jest-dom**: Custom Jest matchers for DOM node assertions.
+- **@testing-library/svelte**: Utilities for testing Svelte components.
+- **@types/jest**: TypeScript definitions for Jest.
+- **autoprefixer**: Adds vendor prefixes to CSS rules.
+- **babel-jest**: Babel integration for Jest.
+- **jest-environment-jsdom**: Jest environment for testing with jsdom.
+- **lodash**: Utility library for common programming tasks.
+- **postcss**: A tool for transforming CSS with JavaScript.
+- **svelte-french-toast**: Toast notification library for Svelte.
+- **svelte-jester**: Jest transformer for Svelte components.
+- **svelte-preprocess**: Preprocessor for Svelte to add support for TypeScript, SCSS, etc.
+- **svelte-routing**: Declarative routing for Svelte.
+- **ts-jest**: TypeScript preprocessor for Jest.
 
 ## Live Demo
 
 Check out the live demo of the project: [Fake Store](https://elegant-basbousa-956151.netlify.app)
 
+## CI/CD
+
+This project uses GitHub Actions and Netlify for continuous integration and continuous deployment.
+
+### GitHub Actions
+
+Automates the testing and building process on every push and pull request.
+
+### Netlify
+
+Automatically deploys the latest build to the live site.
+
 ## Repository
 
-The source code is available on GitHub: [Fake Store Repository](https://github.com/anurag-shukla8004/fake-shop)
-
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
-
-## Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
-
-## Acknowledgements
-
-- [Svelte](https://svelte.dev/)
-- [Tailwind CSS](https://tailwindcss.com/)
-- [TypeScript](https://www.typescriptlang.org/)
-
----
-Developed by Anurag Shukla
+For more information and to view the source code, visit the GitHub repository: [Fake Shop](https://github.com/anurag-shukla8004/fake-shop)
